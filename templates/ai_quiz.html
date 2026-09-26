@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Quiz | EduGenie</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/ai_quiz.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🎓 EduGenie</div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</nav>
+
+<main class="quiz-container">
+
+    <h1>📝 AI Quiz Generator</h1>
+
+    <p>
+        Enter a topic and generate a quiz.
+    </p>
+
+    <form id="quiz-form">
+
+        <input
+            type="text"
+            id="topic"
+            placeholder="Enter topic (e.g. Python)"
+            required
+        >
+
+        <input
+            type="number"
+            id="question-count"
+            min="1"
+            max="10"
+            value="5"
+            required
+        >
+
+        <button type="submit">
+            Generate Quiz 🚀
+        </button>
+
+    </form>
+
+    <div id="quiz-result"></div>
+    <button id="submit-quiz" style="display: none;">
+    Submit Quiz ✅
+</button>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/ai_quiz.js') }}"></script>
+
+</body>
+</html>

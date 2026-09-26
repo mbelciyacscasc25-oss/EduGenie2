@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie | AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🎓 EduGenie</div>
+
+       <div class="nav-links">
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="#">Features</a>
+    <a href="#">About</a>
+    <a href="{{ url_for('register') }}" class="register-link">Register</a>
+    <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+</div>
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">🚀 SMART LEARNING WITH AI</p>
+
+            <h1>
+                Learn Smarter.<br>
+                <span>Grow Faster.</span>
+            </h1>
+
+            <p class="description">
+                EduGenie is an intelligent learning assistant designed
+                to help students understand concepts, practice questions,
+                summarize notes and learn at their own pace.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-btn">
+                    Start Learning →
+                </button>
+
+                <button class="secondary-btn">
+                    Explore Features
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+            <div class="ai-icon">🤖</div>
+
+            <h2>AI Learning Assistant</h2>
+
+            <p>
+                Ask questions, understand difficult topics
+                and get personalized learning support.
+            </p>
+
+            <div class="mini-card">
+                💡 Ask EduGenie anything...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="features">
+
+        <div class="section-title">
+            <p>POWERFUL LEARNING TOOLS</p>
+            <h2>Everything You Need to Learn</h2>
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Chat Assistant</h3>
+                <p>
+                    Ask questions and get easy-to-understand
+                    explanations.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📝</div>
+                <h3>AI Quiz Generator</h3>
+                <p>
+                    Generate practice questions and test
+                    your knowledge.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Notes Summarizer</h3>
+                <p>
+                    Turn long study materials into simple
+                    and useful notes.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3>Code Explainer</h3>
+                <p>
+                    Understand programming concepts and
+                    code step by step.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 EduGenie — AI Powered Learning Assistant</p>
+    </footer>
+
+</body>
+</html>

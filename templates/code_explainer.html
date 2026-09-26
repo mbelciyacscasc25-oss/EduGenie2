@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Code Explainer | EduGenie</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/code_explainer.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🎓 EduGenie</div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</nav>
+
+<main class="code-container">
+
+    <h1>💻 Code Explainer</h1>
+
+    <p>
+        Paste your code and let EduGenie explain it.
+    </p>
+
+    <textarea
+        id="code-input"
+        placeholder="Paste your code here..."
+    ></textarea>
+
+    <button id="explain-button">
+        Explain Code 🚀
+    </button>
+
+    <div id="result"></div>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/code_explainer.js') }}"></script>
+
+</body>
+</html>

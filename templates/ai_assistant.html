@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant | EduGenie</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/ai_assistant.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🎓 EduGenie</div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</nav>
+
+<main class="assistant-container">
+
+    <div class="assistant-header">
+        <h1>🤖 AI Learning Assistant</h1>
+        <p>Ask questions and get help with your studies.</p>
+    </div>
+
+    <div class="chat-box">
+
+        <div class="message bot-message">
+            <strong>EduGenie AI</strong>
+            <p>
+                Hello! 👋 I'm your learning assistant.
+                Ask me anything about your studies.
+            </p>
+        </div>
+
+        <div id="chat-messages"></div>
+
+    </div>
+
+    <form id="chat-form" class="chat-form">
+
+        <input
+            type="text"
+            id="question"
+            placeholder="Ask your question..."
+            autocomplete="off"
+            required
+        >
+
+        <button type="submit">
+            Send 🚀
+        </button>
+
+    </form>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/ai_assistant.js') }}"></script>
+
+</body>
+</html>

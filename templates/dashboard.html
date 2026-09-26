@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dashboard | EduGenie</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🎓 EduGenie</div>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+</nav>
+
+<main>
+
+    <h1>Welcome, {{ name }} 👋</h1>
+
+    <p class="subtitle">
+        Ready to continue your learning journey?
+    </p>
+
+    <div class="dashboard-grid">
+
+        <a href="{{ url_for('ai_assistant') }}" class="dashboard-card">
+    <div>🤖</div>
+    <h2>AI Assistant</h2>
+    <p>Ask questions and learn with AI.</p>
+</a>
+
+        <a href="{{ url_for('ai_quiz') }}" class="dashboard-card">
+    <div>📝</div>
+    <h2>AI Quiz</h2>
+    <p>Test your knowledge.</p>
+</a>
+
+        <a href="{{ url_for('notes') }}" class="dashboard-card">
+    <div>📄</div>
+    <h2>Notes</h2>
+    <p>Summarize your PDF notes.</p>
+</a>
+
+        <a href="{{ url_for('code_explainer') }}" class="dashboard-card">
+    <div>💻</div>
+    <h2>Code Explainer</h2>
+    <p>Understand your code with AI.</p>
+</a>
+
+    </div>
+
+</main>
+
+</body>
+</html>
